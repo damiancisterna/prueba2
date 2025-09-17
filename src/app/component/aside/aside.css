@@ -1,0 +1,23 @@
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  width: 250px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h3 {
+  text-align: center;
+  color: #ffcc00;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 8px 0;
+}

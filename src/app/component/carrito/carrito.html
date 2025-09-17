@@ -1,0 +1,13 @@
+<p>carrito works!</p>
+<h3 class="mi-carrito">🛒 Carrito</h3>
+
+<ul class="agregar">
+  @for (item of carrito; track item) {
+    <li>
+      {{item.nombre}} - ${{item.precio}}
+      <button (click)="eliminarDelCarrito(item)">❌</button>
+    </li>
+  }
+</ul>
+
+<p if="carrito.length === 0">Tu carrito está vacío</p>

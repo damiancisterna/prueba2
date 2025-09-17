@@ -1,0 +1,13 @@
+/* 🌍 ESTILOS GLOBALES - app.css */
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.contener-principal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* espacio entre main y aside */
+}

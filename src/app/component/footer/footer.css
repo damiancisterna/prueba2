@@ -1,0 +1,51 @@
+.sugerencias {
+  position: static;              /* se queda siempre en el mismo lugar */
+  bottom: 20px;                /* separado 20px desde el borde inferior */
+  left: 30px;                  /* separado 30px desde el borde izquierdo */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 10px 15px;
+  max-width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  z-index: 10;                 /* asegura que esté por encima del contenido */
+}
+
+.sugerencias h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.sugerencias img.caine2 {
+  display: block;
+  margin: 0 auto 8px;          /* centrado arriba del formulario */
+  width: 120px;
+}
+
+.sugerencias input,
+.sugerencias textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.sugerencias button {
+  width: 100%;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sugerencias button:hover {
+  background-color: #ff6666;
+}

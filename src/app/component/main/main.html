@@ -1,0 +1,37 @@
+<h3>Lista de personajes</h3>
+
+<div class="lista">
+  <ul>
+    @for (p of personajes; track p; let i = $index) {
+      <li>
+        <img [src]="p.image" [alt]="p.nombre">
+        <p>{{ p.nombre }}</p>
+
+        <button (click)="toggleProducto(i)">
+          {{ p.mostrar ? 'Ocultar' : 'Ver descripción' }}
+        </button>
+
+        @if (p.mostrar) {
+          <div class="desc-card">
+            <p>{{ p.descripcion ? p.descripcion : 'Descripción no disponible.' }}</p>
+          </div>
+        }
+      </li>
+    }
+  </ul>
+</div>
+
+<h3>Productos en venta</h3>
+<div class="productos">
+  <ul>
+    @for (prod of productos; track prod) {
+      <li>
+        <img [src]="prod.image" [alt]="prod.nombre">
+        <p>{{ prod.nombre }} - ${{ prod.precio }}</p>
+        <button (click)="agregarAlCarrito(prod)">🛒 Agregar al carrito</button>
+      </li>
+    }
+  </ul>
+</div>
+
+<app-carrito [carrito]="carrito" ></app-carrito>
